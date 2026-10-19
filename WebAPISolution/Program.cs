@@ -23,6 +23,8 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.MapGet("/", () => "Our web api is ready");
+
 app.MapControllers();
 
 app.Run();

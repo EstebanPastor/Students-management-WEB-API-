@@ -7,12 +7,12 @@ namespace WebAPISolution.Models
         [Key]
         public int StudentId { get; set; }
 
-        [Required(ErrorMessage ="This field is required")]
+        [Required(ErrorMessage = "This field is required")]
         [StringLength(50)]
-        public int Name { get; set; }
+        public string Name { get; set; }
 
         [Required(ErrorMessage = "This field is required")]
         [StringLength(50)]
-        public int Surname { get; set; }
+        public string Surname { get; set; }
     }
 }
